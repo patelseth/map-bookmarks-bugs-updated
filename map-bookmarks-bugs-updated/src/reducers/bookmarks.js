@@ -43,6 +43,19 @@ const bookmarkReducer = (state = initialState, action) => {
         },
       };
     }
+    case actions.EDIT_BOOKMARK: {
+      const { id, newText } = action;
+      return {
+        ...state,
+        data: {
+          ...state.data,
+          [id]: {
+            ...state.data[id],
+            text: newText,
+          },
+        },
+      };
+    }
     default: {
       return state;
     }
