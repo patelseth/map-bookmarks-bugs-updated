@@ -11,7 +11,7 @@ export default connect(
   mapDispatchToProps,
 )(({ promptBookmark }) => {
   useMapEvent('click', event => {
-    promptBookmark([event.latlng.lng, event.latlng.lat]);
+    promptBookmark([event.latlng.lat, event.latlng.lng]);
   });
   return null;
 });

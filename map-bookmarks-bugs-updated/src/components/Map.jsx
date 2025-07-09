@@ -24,7 +24,7 @@ const Map = () => (
     <TileLayer
       // eslint-disable-next-line max-len
       attribution='© <a href="//www.linz.govt.nz/linz-copyright">LINZ CC BY 4.0</a> © <a href="//www.linz.govt.nz/data/linz-data/linz-basemaps/data-attribution">Imagery Basemap contributors</a>'
-      url="https://basemaps.linz.govt.nz/v1/tiles/aerial/EPSG:3857/{x}/{y}/{z}.webp"
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
     />
     <BookmarkMarkers />
   </MapContainer>
